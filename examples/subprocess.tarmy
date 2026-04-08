@@ -1,0 +1,13 @@
+import java.lang.ProcessBuilder
+
+extern class TaskRunner {
+    public static void main(String[] args) throws Exception {
+        println("Initializing subprocess...")
+        
+        // On Windows, this opens the calculator
+        ProcessBuilder pb = new ProcessBuilder("calc.exe")
+        pb.start()
+        
+        println("Subprocess is now active.")
+    }
+}

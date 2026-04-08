@@ -1,0 +1,8 @@
+import java.util.Scanner
+
+Scanner input = new Scanner(System.in)
+
+println("What is your name?")
+String name = input.nextLine()
+
+println("Hello, " + name + "! Welcome to Tarmy.")

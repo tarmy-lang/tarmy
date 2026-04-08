@@ -1,0 +1,18 @@
+import javax.swing.*
+
+extern class TarmyGUI {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Tarmy Window")
+        JButton button = new JButton("Press Me")
+        
+        button.addActionListener(e -> {
+            println("Button clicked!")
+            JOptionPane.showMessageDialog(frame, "Action Successful")
+        })
+
+        frame.add(button)
+        frame.setSize(300, 200)
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+        frame.setVisible(true)
+    }
+}

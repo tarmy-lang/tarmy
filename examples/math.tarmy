@@ -1,0 +1,10 @@
+import java.lang.Math
+
+double radius = 5.5
+double area = Math.PI * Math.pow(radius, 2)
+
+println("Radius: " + radius)
+println("Area of circle: " + area)
+
+int randomNum = (int)(Math.random() * 100)
+println("Your lucky number: " + randomNum)
